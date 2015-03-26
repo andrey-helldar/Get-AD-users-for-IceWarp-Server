@@ -173,7 +173,7 @@ namespace Get_AD_users
                 SetLog("Saving users...");
                 string u_file = @"c:\accounts.txt";
                 if (File.Exists(u_file)) File.Delete(u_file);
-                File.WriteAllText(u_file, filter.ToString());
+                File.WriteAllText(u_file, filter.ToString(), Encoding.UTF8);
                 SetLog("File saved succesfully ( " + u_file + " )");
             }
             catch (Exception ex) { SetLog(ex.Message); }

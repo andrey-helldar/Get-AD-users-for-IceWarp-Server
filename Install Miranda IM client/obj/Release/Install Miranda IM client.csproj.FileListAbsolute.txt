@@ -1,0 +1,6 @@
+D:\Helldar\Visual C#\Get AD users\Install Miranda IM client\obj\Release\Install Miranda IM client.csprojResolveAssemblyReference.cache
+D:\Helldar\Visual C#\Get AD users\Install Miranda IM client\bin\Release\Install Miranda IM client.exe.config
+D:\Helldar\Visual C#\Get AD users\Install Miranda IM client\bin\Release\Install Miranda IM client.exe
+D:\Helldar\Visual C#\Get AD users\Install Miranda IM client\bin\Release\Install Miranda IM client.pdb
+D:\Helldar\Visual C#\Get AD users\Install Miranda IM client\obj\Release\Install Miranda IM client.exe
+D:\Helldar\Visual C#\Get AD users\Install Miranda IM client\obj\Release\Install Miranda IM client.pdb

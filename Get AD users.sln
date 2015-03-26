@@ -5,6 +5,8 @@ VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Get AD users", "Get AD users\Get AD users.csproj", "{DF876F77-1849-4FB1-AA5F-D0456624A473}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Install Miranda IM client", "Install Miranda IM client\Install Miranda IM client.csproj", "{556726AF-C9D4-492C-BB73-4B6B7147B16E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{DF876F77-1849-4FB1-AA5F-D0456624A473}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DF876F77-1849-4FB1-AA5F-D0456624A473}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DF876F77-1849-4FB1-AA5F-D0456624A473}.Release|Any CPU.Build.0 = Release|Any CPU
+		{556726AF-C9D4-492C-BB73-4B6B7147B16E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{556726AF-C9D4-492C-BB73-4B6B7147B16E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{556726AF-C9D4-492C-BB73-4B6B7147B16E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{556726AF-C9D4-492C-BB73-4B6B7147B16E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

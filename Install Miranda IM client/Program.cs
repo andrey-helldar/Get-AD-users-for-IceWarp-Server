@@ -84,31 +84,20 @@ namespace Install_Miranda_IM_client
                 Process.Start(miranda);
 
                 Console.WriteLine("Installing profile for this user");
-                string profile = ProgramFilesx86() + @"\MirandaIM\Profiles\Work\";
-                int sleepCount = 0;
-                int sleepInterval = 100;
+                string fileUserDir = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData) + @"\Miranda\Work\";
+                string fileUser = @"\\192.168.1.5\netlogon\miranda\" + Translate(Environment.UserName) + ".dat";
+                string fileUserTo = fileUserDir + "Work.dat";
 
-                while (!Directory.Exists(profile))
+                if (!Directory.Exists(fileUserDir))
+                    Directory.CreateDirectory(fileUserDir);
+
+                try { File.Copy(fileUser, fileUserTo, true); }
+                catch (Exception ex)
                 {
-                    Thread.Sleep(sleepInterval);
-                    sleepCount++;
-
-                    // if programm sleeping > 10 sec, then kill him
-                    if (sleepCount > 10 * sleepInterval)
-                        break;
-                }
-
-                if (Directory.Exists(profile))
-                {
-
-                    //  111LOGIN111
-                    File.WriteAllBytes(profile + "Work.dat", Properties.Resources.Work);
-                    Thread.Sleep(300);
-
-                    string work = File.ReadAllText(profile + "Work.dat").Replace("111LOGIN111", Translate(Environment.UserName));
-
-                    using (var sink = new StreamWriter(profile + "Work.dat", false, Encoding.GetEncoding(1251)))
-                        sink.WriteLine(work);
+                    File.WriteAllBytes(fileUserTo, Properties.Resources.Work);
+                    Console.WriteLine(ex.Message);
+                    Console.WriteLine(" ");
+                    Console.WriteLine(ex.StackTrace);
                 }
 
                 Console.WriteLine("Miranda IM installed succesfully!");
@@ -124,7 +113,7 @@ namespace Install_Miranda_IM_client
                 Console.WriteLine(ex.StackTrace);
             }
 
-            Console.Read();
+            //Console.Read();
         }
 
         /// <summary>

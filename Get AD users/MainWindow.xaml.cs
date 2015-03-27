@@ -173,7 +173,7 @@ namespace Get_AD_users
 
                     string login = Translate(accountLogin);
 
-                    filter.Append(String.Format("{0}@{1},{2},{3}", login, domain, defaultPassword, accountName + Environment.NewLine));
+                    filter.AppendLine(String.Format("{0}@{1},{2},{3}", login, domain, defaultPassword, accountName));
                     SetLog("User '" + accountName + "' ('" + login + "') successfully added");
                 }
                 de.Close();

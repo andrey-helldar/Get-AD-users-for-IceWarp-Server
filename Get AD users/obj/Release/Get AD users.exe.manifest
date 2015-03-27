@@ -3,7 +3,7 @@
   <asmv1:assemblyIdentity name="Get AD users.exe" version="1.0.0.1" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" type="win32" />
   <application />
   <entryPoint>
-    <assemblyIdentity name="Get AD users" version="1.0.5564.17160" language="neutral" processorArchitecture="msil" />
+    <assemblyIdentity name="Get AD users" version="1.0.5564.17572" language="neutral" processorArchitecture="msil" />
     <commandLine file="Get AD users.exe" parameters="" />
   </entryPoint>
   <trustInfo>
@@ -43,13 +43,13 @@
   </dependency>
   <dependency>
     <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Get AD users.exe" size="17856">
-      <assemblyIdentity name="Get AD users" version="1.0.5564.17160" language="neutral" processorArchitecture="msil" />
+      <assemblyIdentity name="Get AD users" version="1.0.5564.17572" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>6R5FpGKilMe3PQI05r5M875WXSc+c7zAVmmbNq4liiU=</dsig:DigestValue>
+        <dsig:DigestValue>LA3OQx8HJ6+7CyUQDK8WxPRUn8VSwqO4DuiNmgNb9D0=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

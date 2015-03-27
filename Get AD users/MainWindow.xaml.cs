@@ -26,6 +26,10 @@ namespace Get_AD_users
         // Default user password
         string defaultPassword = "1q2w3e4r5";
 
+        // File with accounts
+        string u_file = @"c:\accounts.txt";
+
+
         public MainWindow()
         {
             InitializeComponent();
@@ -177,10 +181,9 @@ namespace Get_AD_users
                 SetLog("Users getting successfully!");
 
                 SetLog("Saving users...");
-                string u_file = @"c:\accounts.bat";
                 if (File.Exists(u_file)) File.Delete(u_file);
 
-                using (var sink = new StreamWriter(u_file, false, new System.Text.UnicodeEncoding()))
+                using (var sink = new StreamWriter(u_file, false, Encoding.GetEncoding(1251)))
                     sink.WriteLine(filter.ToString());
 
                 SetLog("File saved succesfully ( " + u_file + " )");

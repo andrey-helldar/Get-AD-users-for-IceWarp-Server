@@ -11,3 +11,8 @@ d:\Helldar\Visual C#\Get AD users\Get AD users\obj\Debug\Get_AD_users.Properties
 d:\Helldar\Visual C#\Get AD users\Get AD users\obj\Debug\Get AD users.csproj.GenerateResource.Cache
 d:\Helldar\Visual C#\Get AD users\Get AD users\obj\Debug\Get AD users.exe
 d:\Helldar\Visual C#\Get AD users\Get AD users\obj\Debug\Get AD users.pdb
+d:\Helldar\Visual C#\Get AD users\Get AD users\bin\Debug\Get AD users.exe.manifest
+d:\Helldar\Visual C#\Get AD users\Get AD users\bin\Debug\Get AD users.application
+d:\Helldar\Visual C#\Get AD users\Get AD users\obj\Debug\Get AD users.TrustInfo.xml
+d:\Helldar\Visual C#\Get AD users\Get AD users\obj\Debug\Get AD users.exe.manifest
+d:\Helldar\Visual C#\Get AD users\Get AD users\obj\Debug\Get AD users.application

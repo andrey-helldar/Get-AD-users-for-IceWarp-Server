@@ -17,16 +17,16 @@
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
-        <Label Content="Host:" HorizontalAlignment="Left" Margin="10,10,0,1" VerticalAlignment="Center"/>
-        <Label Content="Administrator username:" HorizontalAlignment="Left" Margin="10,11,0,0" Grid.Row="1" VerticalAlignment="Center"/>
-        <Label Content="Administrator password:" HorizontalAlignment="Left" Margin="10,10,0,1" Grid.Row="2" VerticalAlignment="Center"/>
-        <Label Content="Domain:" HorizontalAlignment="Left" Margin="10,10,0,1" Grid.Row="3" VerticalAlignment="Center"/>
-        <Label Content="Object:" HorizontalAlignment="Left" Margin="10,10,0,1" Grid.Row="4" VerticalAlignment="Center"/>
-        <TextBox x:Name="tbHost" Grid.Column="1" Margin="33,13,33,3" TextWrapping="Wrap" VerticalAlignment="Center" Width="200" Text="192.168.1.1"/>
-        <TextBox x:Name="tbUsername" Grid.Column="1" Margin="33,13,33,3" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Center" Width="200" Text="Admin"/>
-        <PasswordBox x:Name="pbPassword" Grid.Column="1" Margin="33,13,33,3" Grid.Row="2" VerticalAlignment="Center" Width="200" Password="admin"/>
-        <TextBox x:Name="tbDomain" Grid.Column="1" Margin="33,13,33,3" Grid.Row="3" TextWrapping="Wrap" VerticalAlignment="Center" Width="200" Text="domain.local"/>
-        <TextBox x:Name="tbObject" Grid.Column="1" Margin="33,13,33,3" Grid.Row="4" TextWrapping="Wrap" VerticalAlignment="Center" Width="200" Text="Users"/>
+        <Label Content="Host:" HorizontalAlignment="Left" Margin="10,10,10,1" VerticalAlignment="Center"/>
+        <Label Content="Administrator username:" HorizontalAlignment="Left" Margin="10,10,10,0" Grid.Row="1" VerticalAlignment="Center"/>
+        <Label Content="Administrator password:" HorizontalAlignment="Left" Margin="10,10,10,1" Grid.Row="2" VerticalAlignment="Center"/>
+        <Label Content="Domain:" HorizontalAlignment="Left" Margin="10,10,10,1" Grid.Row="3" VerticalAlignment="Center"/>
+        <Label Content="Object:" HorizontalAlignment="Left" Margin="10,10,10,1" Grid.Row="4" VerticalAlignment="Center"/>
+        <TextBox x:Name="tbHost" Grid.Column="1" Margin="10,10,10,0" TextWrapping="Wrap" VerticalAlignment="Center" Width="200" Text="192.168.1.1"/>
+        <TextBox x:Name="tbUsername" Grid.Column="1" Margin="10,10,10,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Center" Width="200" Text="Admin"/>
+        <PasswordBox x:Name="pbPassword" Grid.Column="1" Margin="10,10,10,0" Grid.Row="2" VerticalAlignment="Center" Width="200" Password="admin"/>
+        <TextBox x:Name="tbDomain" Grid.Column="1" Margin="10,10,10,0" Grid.Row="3" TextWrapping="Wrap" VerticalAlignment="Center" Width="200" Text="domain.local"/>
+        <TextBox x:Name="tbObject" Grid.Column="1" Margin="10,10,10,0" Grid.Row="4" TextWrapping="Wrap" VerticalAlignment="Center" Width="200" Text="Users"/>
         <Button x:Name="bGet" Content="Get" HorizontalAlignment="Center" Margin="10" Grid.Row="5" VerticalAlignment="Center" Padding="30,5" Background="#FF0068FF" Foreground="White" BorderBrush="{x:Null}" Click="bGet_Click" Grid.Column="1"/>
         <ListBox x:Name="lbLog" Grid.ColumnSpan="2" Grid.Row="6" Margin="10" Height="150" />
         <TextBlock HorizontalAlignment="Left" Margin="10" Grid.Row="5" TextWrapping="Wrap" VerticalAlignment="Center">

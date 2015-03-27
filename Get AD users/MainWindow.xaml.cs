@@ -138,6 +138,12 @@ namespace Get_AD_users
             {
                 string accountLogin = String.Empty;
                 string accountName = String.Empty;
+                string domain = "";
+
+                Task.WaitAll(new Task[] {
+                    Task.Factory.StartNew(() => Dispatcher.BeginInvoke(new ThreadStart(delegate { domain = tbDomain.Text.Trim(); })) ),
+                    Task.Delay(10)
+                });
 
                 SetLog("Connecting to domain...");
                 DirectoryEntry de = GetDirectoryEntry();
@@ -163,7 +169,7 @@ namespace Get_AD_users
 
                     string login = Translate(accountLogin);
 
-                    filter.Append(String.Format("{0}@ukregion.local,{1},{2}", login, defaultPassword, accountName + Environment.NewLine));
+                    filter.Append(String.Format("{0}@{1},{2},{3}", login, domain, defaultPassword, accountName + Environment.NewLine));
                     SetLog("User '" + accountName + "' ('" + login + "') successfully added");
                 }
                 de.Close();
@@ -171,9 +177,12 @@ namespace Get_AD_users
                 SetLog("Users getting successfully!");
 
                 SetLog("Saving users...");
-                string u_file = @"c:\accounts.txt";
+                string u_file = @"c:\accounts.bat";
                 if (File.Exists(u_file)) File.Delete(u_file);
-                File.WriteAllText(u_file, filter.ToString(), Encoding.UTF8);
+
+                using (var sink = new StreamWriter(u_file, false, new System.Text.UnicodeEncoding()))
+                    sink.WriteLine(filter.ToString());
+
                 SetLog("File saved succesfully ( " + u_file + " )");
             }
             catch (Exception ex) { SetLog(ex.Message); }

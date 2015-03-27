@@ -60,6 +60,14 @@ namespace Install_Miranda_IM_client
                 }
                 else
                     Console.WriteLine("PSI not found");
+
+
+                // Remove shortcut
+                var info = new DirectoryInfo(Environment.GetFolderPath(Environment.SpecialFolder.Startup));
+
+                foreach (FileInfo file in info.GetFiles())
+                    if (file.Name.IndexOf("Psi") > -1)
+                        File.Delete(file.FullName);
             }
             catch (Exception ex)
             {
